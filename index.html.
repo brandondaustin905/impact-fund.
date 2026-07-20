@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canadian Cheer Hub Impact Fund</title>
+<meta name="description" content="$3 of every $15 Premium membership goes to Canadian cheer athletes. Here are the numbers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Newsreader:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#14181c;--paper:#edeeec;--signal:#c8102e;--slate:#68727d;--rule:#d5d8d4}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.55;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:660px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--slate);display:block;margin-bottom:12px}
+
+  .hero{padding:56px 0 10px}
+  h1{font-family:"Archivo",system-ui,sans-serif;font-weight:800;
+    font-size:clamp(32px,8vw,54px);line-height:.98;letter-spacing:-.025em;
+    text-transform:uppercase;margin:0 0 22px;max-width:12ch}
+  h1 em{font-style:normal;color:var(--signal)}
+  .lede{font-size:20px;max-width:56ch;margin:0 0 18px}
+  p{max-width:58ch}
+  .split{display:flex;align-items:baseline;gap:14px;margin:30px 0;padding:20px 0;
+    border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .split b{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(38px,10vw,58px);
+    line-height:1;letter-spacing:-.03em;color:var(--signal)}
+  .split span{font-size:16px;color:var(--slate);max-width:26ch}
+  h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;margin:52px 0 18px;padding-bottom:9px;border-bottom:2px solid var(--ink)}
+  .pillar{display:flex;justify-content:space-between;gap:16px;padding:14px 0;
+    border-bottom:1px solid var(--rule);align-items:baseline}
+  .pillar b{font-family:"Archivo",sans-serif;font-weight:600;font-size:16px}
+  .pillar span{color:var(--slate);font-size:15px;text-align:right;max-width:20ch}
+  .scrollcue{display:block;text-align:center;margin:54px 0 0;padding:16px 0 60px;
+    color:var(--slate);text-decoration:none;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  .scrollcue:hover,.scrollcue:focus-visible{color:var(--signal)}
+  .scrollcue i{display:block;font-style:normal;font-size:20px;margin-top:8px}
+
+  .dials{background:var(--ink);color:var(--paper);padding:64px 0 70px}
+  .dials .eyebrow{color:#8d97a1}
+  .dials h2{color:var(--paper);border-color:#3a424b;margin-top:0}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+  .dial{text-align:center}
+  .dial svg{width:100%;max-width:170px;height:auto;display:block;margin:0 auto}
+  .track{fill:none;stroke:#2b333c;stroke-width:9}
+  .arc{fill:none;stroke:var(--signal);stroke-width:9;stroke-linecap:round;
+    transform:rotate(-90deg);transform-origin:60px 60px;
+    stroke-dasharray:326.7;stroke-dashoffset:326.7;
+    transition:stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1)}
+  .val{font-family:"Archivo",sans-serif;font-weight:800;font-size:22px;
+    letter-spacing:-.02em;fill:#edeeec;text-anchor:middle}
+  .dlabel{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:#8d97a1;margin-top:14px}
+  .dsub{font-size:15px;color:#b6bec6;margin-top:6px;min-height:1.4em}
+  .dayone{margin:44px 0 0;padding:18px 20px;border-left:3px solid var(--signal);
+    background:#1c2229;color:#c4ccd4;font-size:16px;max-width:none}
+  .stamp{margin-top:28px;padding-top:20px;border-top:1px solid #3a424b;
+    font-size:14px;color:#8d97a1}
+  .stamp a{color:var(--paper)}
+
+  footer{padding:36px 0 70px;font-size:14px;color:var(--slate)}
+  a:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+
+  @media(max-width:600px){
+    .grid{grid-template-columns:1fr;gap:38px}
+    .dial svg{max-width:150px}
+    .split{display:block}
+    .split span{display:block;margin-top:10px;max-width:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .arc{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="eyebrow">The Cheer Hub &middot; Public Ledger</span>
+    <h1>Canadian Cheer Hub <em>Impact Fund</em></h1>
+
+    <p class="lede">Cheer is expensive. Cost, not talent, is the most common reason an
+    athlete in this country stops competing. So we took it out of our own revenue instead
+    of asking you for more.</p>
+
+    <div class="split">
+      <b>$3 of $15</b>
+      <span>Every Premium membership is $15/month. Three dollars of it is set aside
+      before we pay ourselves anything.</span>
+    </div>
+
+    <p>It is a flat amount off the sticker price, not a share of whatever's left at the
+    end of the month. It happens automatically on every renewal, for every member, whether
+    or not anyone is watching.</p>
+
+    <h2>Where it goes</h2>
+    <div class="pillar"><b>🥇 Athlete Scholarships</b><span>Registration fees and gear</span></div>
+    <div class="pillar"><b>🏟️ Facility Grants</b><span>Mats and safety equipment</span></div>
+    <div class="pillar"><b>✈️ Team Sponsorships</b><span>Travel to competitions</span></div>
+    <div class="pillar"><b>💪 Skill Development</b><span>Clinics and privates</span></div>
+
+    <h2>How you check us</h2>
+    <p>Three numbers, updated every month: how many members are contributing, how much
+    has been set aside in total, and how much has actually been granted back out to
+    athletes and gyms.</p>
+    <p>Fund money sits in its own account, separate from the money that runs the business.
+    A grant only counts once it has left that account.</p>
+
+    <a class="scrollcue" href="#numbers">The numbers <i>↓</i></a>
+  </div>
+</div>
+
+<section class="dials" id="numbers">
+  <div class="wrap">
+    <span class="eyebrow">Live count</span>
+    <h2>Where the fund stands</h2>
+
+    <div class="grid">
+      <div class="dial">
+        <svg viewBox="0 0 120 120" role="img" aria-labelledby="t1">
+          <title id="t1">Members contributing</title>
+          <circle class="track" cx="60" cy="60" r="52"></circle>
+          <circle class="arc" data-arc="members" cx="60" cy="60" r="52"></circle>
+          <text class="val" x="60" y="67" data-count="members">0</text>
+        </svg>
+        <div class="dlabel">Members</div>
+        <div class="dsub" data-sub="members"></div>
+      </div>
+
+      <div class="dial">
+        <svg viewBox="0 0 120 120" role="img" aria-labelledby="t2">
+          <title id="t2">Money raised</title>
+          <circle class="track" cx="60" cy="60" r="52"></circle>
+          <circle class="arc" data-arc="raised" cx="60" cy="60" r="52"></circle>
+          <text class="val" x="60" y="67" data-count="raised">$0</text>
+        </svg>
+        <div class="dlabel">Money raised</div>
+        <div class="dsub" data-sub="raised"></div>
+      </div>
+
+      <div class="dial">
+        <svg viewBox="0 0 120 120" role="img" aria-labelledby="t3">
+          <title id="t3">Granted</title>
+          <circle class="track" cx="60" cy="60" r="52"></circle>
+          <circle class="arc" data-arc="granted" cx="60" cy="60" r="52"></circle>
+          <text class="val" x="60" y="67" data-count="granted">$0</text>
+        </svg>
+        <div class="dlabel">Granted</div>
+        <div class="dsub" data-sub="granted"></div>
+      </div>
+    </div>
+
+    <p id="dayone" class="dayone" hidden>
+      These are honest zeros. The fund opens with the first Premium membership, and this
+      page went up before there was a single dollar in it &mdash; so you can watch the
+      first one arrive.
+    </p>
+
+    <div class="stamp">
+      Updated <span id="updated">—</span>. Questions:
+      <a href="mailto:impact@thecheerhub.ca">impact@thecheerhub.ca</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    The Cheer Hub is a business, not a registered charity. Contributions are not
+    charitable donations and no tax receipts are issued. All figures in CAD.
+  </footer>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════════
+   EDIT THESE NUMBERS EACH MONTH. Nothing else in this file changes.
+   ══════════════════════════════════════════════════════════════════════ */
+const FUND = {
+  members: 0,               // active Premium members right now
+  goal:    50,              // what the first dial fills toward
+  granted: 0,               // total $ that has actually left the fund account
+  updated: "July 2026",     // shown under the dials
+
+  // One line per finished month. Money raised = these added up x $3.
+  // When August closes with 12 members, add:  { name: "August 2026", count: 12 },
+  months: [
+  ]
+};
+/* ══════════════════════════════════════════════════════════════════════ */
+
+(function () {
+  const PER = 3, CIRC = 2 * Math.PI * 52;
+  const $ = (id) => document.getElementById(id);
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cash = (n) => "$" + Math.round(n).toLocaleString("en-CA");
+  const plain = (n) => Math.round(n).toLocaleString("en-CA");
+
+  let state = { members: 0, goal: 50, granted: 0, updated: "", months: [] };
+
+  function paint() {
+    const raised = state.months.reduce((a, m) => a + m.count, 0) * PER;
+    const dials = {
+      members: { v: state.members, max: state.goal || 1, money: false,
+        sub: state.members ? "of " + plain(state.goal) + " member goal"
+                           : "first " + plain(state.goal) + " is the goal" },
+      raised:  { v: raised, max: raised || 1, money: true,
+        sub: raised ? "set aside since launch" : "$3 lands here on the first renewal" },
+      granted: { v: state.granted, max: raised || 1, money: true,
+        sub: raised ? Math.round(state.granted / raised * 100) + "% back out the door"
+                    : "no grants yet" }
+    };
+
+    $("updated").textContent = state.updated || "—";
+    $("dayone").hidden = raised !== 0;
+
+    document.querySelectorAll("[data-sub]").forEach((el) => {
+      el.textContent = dials[el.dataset.sub].sub;
+    });
+
+    document.querySelectorAll("[data-arc]").forEach((arc) => {
+      const d = dials[arc.dataset.arc];
+      const pct = Math.max(0, Math.min(1, d.max ? d.v / d.max : 0));
+      arc.style.strokeDashoffset = CIRC - CIRC * pct;
+    });
+
+    document.querySelectorAll("[data-count]").forEach((node) => {
+      const d = dials[node.dataset.count];
+      const fmt = d.money ? cash : plain;
+      if (still) { node.textContent = fmt(d.v); return; }
+      const start = performance.now(), dur = 1400;
+      (function step(now) {
+        const t = Math.min(1, (now - start) / dur);
+        node.textContent = fmt(d.v * (1 - Math.pow(1 - t, 3)));
+        if (t < 1) requestAnimationFrame(step);
+      })(start);
+    });
+  }
+
+  function load() {
+    state = {
+      members: FUND.members,
+      goal: FUND.goal,
+      granted: FUND.granted,
+      updated: FUND.updated,
+      months: FUND.months
+    };
+    paint();
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
